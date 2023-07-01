@@ -1,0 +1,26 @@
+.container {
+   background-image: url(./imagenes/rick_morty_01.0.jpg);
+   background-size: 100px;
+    /* backdrop-repeat :no-repeat;  */
+    background-size: cover;
+   height: 100vh;
+   width: 100vw; 
+}
+/* contairner es el nombre de nuestro contener App que le cambia los estilos. se modularisa y asi lo podemos ir cambiando los estilos
+en este caso container nos trae una imagen y con las demas propiedades podemos cambiarles lo que necesitemos*/
+
+@media(min-width:600px) and (max-width : 1024ps){
+   .container{
+
+      /* width: 100vw; */
+      /* background-size: 50px; */
+      background-size: cover;
+      width: 50%;
+   }
+}
+/* .container {
+   display:  flox;
+   
+   padding: 100px;
+   margin: 5%;
+} */
