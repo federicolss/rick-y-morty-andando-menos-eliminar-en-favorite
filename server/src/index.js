@@ -9,7 +9,7 @@ http.createServer((req, res) => {
   const url = req.url.split("/");
   const param1 = url[1];
   const param2 = url[2];
-  const param3 = url[3];
+  const id = url[3];
 
   if (param1 === "rickendmorty" && param2 === "characters") {
     res.writeHead(200, { "Content-type": "application/json" });
@@ -18,7 +18,7 @@ http.createServer((req, res) => {
 
   if (param1 === "rickendmorty" && param2 === "character") {
     const character = characters.find((ch) => {
-      return ch.id == Number(param3);
+      return ch.id == Number(id);
     });
 
     if (character) {
